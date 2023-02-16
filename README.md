@@ -1,5 +1,17 @@
 # ft_printf
 
-### Parce que putstr et putnbr, ça va bien 2 minutes
+*Because ft_putnbr() and ft_putstr() aren’t enough*
 
-Résumé: Vous en avez assez de faire vos affichages en alternant ft_putstr et ft_putnbr ? Vous n’avez pas le droit d’utiliser printf ? Recodez le votre ! Ce sera l’occasion de découvrir une feature du C - les fonctions variadiques - et de vous entrainer à la gestion fine des options d’affichage. Vous aurez ensuite le droit d’utiliser votre ft_printf dans tous vos projets ultérieurs. __Sujet__ -> ft_printf.fr.pdf
+The goal of this project is to create a libftprintf.a library containing the recoded version the popular and versatile libc function printf(). 
+
+The following conversions are implemented: 
+
+ - %c Prints a single character.  
+ - %s Prints a string (as defined by the common C convention).
+ - %p The void * pointer argument has to be printed in hexadecimal format.
+ - %d Prints a decimal (base 10) number.
+ - %i Prints an integer in base 10. 
+ - %u Prints an unsigned decimal (base 10) number. 
+ - %x Prints a number in hexadecimal (base 16) lowercase format.
+ - %X Prints a number in hexadecimal (base 16) uppercase format. 
+ - %% Prints a percent sign.
